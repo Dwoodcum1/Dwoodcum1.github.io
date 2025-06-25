@@ -21,7 +21,9 @@
     	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 		<script type="text/babel" data-type="module">
-			document.body.innerHTML = '<div id="app">Hello</div>';
+			import { createRoot } from 'react-dom/client';
+
+			document.body.innerHTML = '<div id="app"></div>';
 
 			// Render your React component instead
 			const root = createRoot(document.getElementById('app'));
